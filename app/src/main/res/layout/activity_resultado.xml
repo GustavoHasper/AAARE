@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Resultado">
+
+    <TextView
+        android:id="@+id/tvLPA"
+        android:layout_width="175dp"
+        android:layout_height="68dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/tvPL"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <TextView
+        android:id="@+id/tvPL"
+        android:layout_width="175dp"
+        android:layout_height="68dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvLPA"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <TextView
+        android:id="@+id/tvROE"
+        android:layout_width="175dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="36dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/tvVPA"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLPA" />
+
+    <TextView
+        android:id="@+id/tvVPA"
+        android:layout_width="175dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="36dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvROE"
+        app:layout_constraintTop_toBottomOf="@+id/tvPL" />
+
+    <TextView
+        android:id="@+id/tvPVP"
+        android:layout_width="175dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="60dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVPA" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

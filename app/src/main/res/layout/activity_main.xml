@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvBolsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bolsa de Valores"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <Button
+        android:id="@+id/btCalcular"
+        android:layout_width="334dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="72dp"
+        android:onClick="calc"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPrecoAtual" />
+
+    <EditText
+        android:id="@+id/tvAtivo"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Ativo"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/tvBolsa"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <EditText
+        android:id="@+id/tvLucroLiquido"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Lucro Líquido"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/tvAtivo"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <EditText
+        android:id="@+id/tvPatrimonioLiquido"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Patrimônio Líquido"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/tvLucroLiquido"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <EditText
+        android:id="@+id/tvNumAcao"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Nº Ações emitidas na Bolsa"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/tvPatrimonioLiquido"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <EditText
+        android:id="@+id/tvPrecoAtual"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Preço Atual"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumAcao"
+        tools:layout_editor_absoluteX="1dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
